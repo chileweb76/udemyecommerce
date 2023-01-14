@@ -1,0 +1,17 @@
+//variables
+$small: 700px;
+$mid: 800px;
+$medium: 900px;
+$large: 1200px;
+$xlarge: 1800px;
+
+//mixins & placeholders
+@mixin breakpoint($size) {
+    @media (min-width: $size) {
+      @content;
+    }
+}
+
+
+@import "reset";
+@import "categories";
