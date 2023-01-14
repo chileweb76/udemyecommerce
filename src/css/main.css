@@ -12,6 +12,34 @@ body, nav, section, footer, article, h1, h2, h3, h4, p, a, ol, ul, li, button, f
   vertical-align: baseline;
 }
 
+* {
+  box-sizing: border-box;
+}
+
+.navigation {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 25px;
+}
+.navigation .logo-container {
+  height: 100%;
+  width: 70px;
+  padding: 25px;
+}
+.navigation .nav-links-container {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.navigation .nav-links-container .nav-link {
+  padding: 10px 15px;
+  cursor: pointer;
+}
+
 .categories-container {
   width: 100%;
   display: flex;
