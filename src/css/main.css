@@ -160,6 +160,18 @@ h2 {
   margin: 1rem 0;
 }
 
+.buttons-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.authentication-container {
+  display: flex;
+  justify-content: space-between;
+  width: 900px;
+  margin: 3rem auto;
+}
+
 .button-container {
   min-width: 165px;
   width: auto;
