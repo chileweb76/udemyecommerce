@@ -1,3 +1,7 @@
+html {
+  padding: 20px 40px;
+}
+
 /* CSS Reset =========================== */
 body, nav, section, footer, article, h1, h2, h3, h4, p, a, ol, ul, li, button, fieldset, form, label {
   margin: 0;
@@ -212,4 +216,103 @@ h2 {
   background-color: black;
   color: white;
   border: none;
+}
+
+.product-card-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  height: 350px;
+  align-items: center;
+  position: relative;
+}
+.product-card-container img {
+  width: 100%;
+  height: 95%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-bottom: 5px;
+}
+.product-card-container button {
+  width: 80%;
+  opacity: 0.7;
+  position: absolute;
+  top: 255px;
+  display: none;
+}
+.product-card-container:hover img {
+  opacity: 0.8;
+}
+.product-card-container:hover button {
+  opacity: 0.85;
+  display: flex;
+}
+.product-card-container .footer {
+  width: 100%;
+  height: 5%;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
+}
+.product-card-container .footer .name {
+  width: 90%;
+  margin-bottom: 15px;
+}
+.product-card-container .footer .price {
+  width: 10%;
+}
+
+.products-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  row-gap: 50px;
+}
+
+.cart-icon-container {
+  width: 45px;
+  height: 45px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.cart-icon-container .shopping-icon {
+  width: 24px;
+  height: 24px;
+}
+.cart-icon-container .item-count {
+  position: absolute;
+  font-size: 10px;
+  font-weight: bold;
+  bottom: 12px;
+}
+
+.cart-dropdown-container {
+  position: absolute;
+  width: 240px;
+  height: 340px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid black;
+  background-color: white;
+  top: 90px;
+  right: 40px;
+  z-index: 5;
+}
+.cart-dropdown-container .empty-message {
+  font-size: 18px;
+  margin: 50px auto;
+}
+.cart-dropdown-container .cart-items {
+  height: 240px;
+  display: flex;
+  flex-direction: column;
+  overflow: scroll;
+}
+.cart-dropdown-container button {
+  margin-top: auto;
 }/*# sourceMappingURL=main.css.map */
