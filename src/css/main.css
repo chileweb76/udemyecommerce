@@ -52,7 +52,7 @@ body, nav, section, footer, article, h1, h2, h3, h4, p, a, ol, ul, li, button, f
   justify-content: space-between;
 }
 
-.category-container {
+.directory-item-container {
   min-width: 30%;
   height: 240px;
   flex: 1 1 auto;
@@ -63,32 +63,32 @@ body, nav, section, footer, article, h1, h2, h3, h4, p, a, ol, ul, li, button, f
   margin: 0 7.5px 15px;
   overflow: hidden;
 }
-.category-container:hover {
+.directory-item-container:hover {
   cursor: pointer;
 }
-.category-container:hover .background-image {
+.directory-item-container:hover .background-image {
   transform: scale(1.1);
   transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 }
-.category-container:hover .category-body-container {
+.directory-item-container:hover .body {
   opacity: 0.9;
 }
-.category-container.large {
+.directory-item-container.large {
   height: 380px;
 }
-.category-container:first-child {
+.directory-item-container:first-child {
   margin-right: 7.5px;
 }
-.category-container:last-child {
+.directory-item-container:last-child {
   margin-left: 7.5px;
 }
-.category-container .background-image {
+.directory-item-container .background-image {
   width: 100%;
   height: 100%;
   background-size: cover;
   background-position: center;
 }
-.category-container .category-body-container {
+.directory-item-container .body {
   height: 90px;
   padding: 0 25px;
   display: flex;
@@ -100,15 +100,46 @@ body, nav, section, footer, article, h1, h2, h3, h4, p, a, ol, ul, li, button, f
   opacity: 0.7;
   position: absolute;
 }
-.category-container .category-body-container h2 {
+.directory-item-container .body h2 {
   font-weight: bold;
   margin: 0 6px 0;
   font-size: 22px;
   color: #4a4a4a;
 }
-.category-container .category-body-container p {
+.directory-item-container .body p {
   font-weight: lighter;
   font-size: 16px;
+}
+
+.category-preview-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+.category-preview-container .title {
+  font-size: 28px;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+.category-preview-container .preview {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+}
+
+.category-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 50px;
+}
+
+.category-title {
+  font-size: 38px;
+  margin-bottom: 25px;
+  text-align: center;
 }
 
 .group {
