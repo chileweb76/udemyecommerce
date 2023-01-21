@@ -1,5 +1,6 @@
 html {
   padding: 20px 40px;
+  font-family: 'Open Sans Condensed', sans-serif;
 }
 
 
@@ -10,3 +11,4 @@ html {
 @import "button";
 @import "products";
 @import "cart";
+@import "checkout";
